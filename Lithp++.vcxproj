@@ -70,7 +70,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Lithp++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -85,7 +85,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Lithp++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -100,35 +100,35 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\Lithp++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\Lithp++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\lithp++\main.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpAtom.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpDict.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpExceptions.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpInteger.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpList.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpPrimitive.cpp" />
-    <ClCompile Include="..\lithp++\src\LithpString.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\LithpAtom.cpp" />
+    <ClCompile Include="src\LithpDict.cpp" />
+    <ClCompile Include="src\LithpExceptions.cpp" />
+    <ClCompile Include="src\LithpInteger.cpp" />
+    <ClCompile Include="src\LithpList.cpp" />
+    <ClCompile Include="src\LithpPrimitive.cpp" />
+    <ClCompile Include="src\LithpString.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\lithp++\.dep.inc" />
+    <None Include=".dep.inc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\lithp++\include\LithpAtom.h" />
-    <ClInclude Include="..\lithp++\include\LithpDict.h" />
-    <ClInclude Include="..\lithp++\include\LithpExceptions.h" />
-    <ClInclude Include="..\lithp++\include\LithpInteger.h" />
-    <ClInclude Include="..\lithp++\include\LithpList.h" />
-    <ClInclude Include="..\lithp++\include\LithpPrimitive.h" />
-    <ClInclude Include="..\lithp++\include\LithpString.h" />
+    <ClInclude Include="include\LithpAtom.h" />
+    <ClInclude Include="include\LithpDict.h" />
+    <ClInclude Include="include\LithpExceptions.h" />
+    <ClInclude Include="include\LithpInteger.h" />
+    <ClInclude Include="include\LithpList.h" />
+    <ClInclude Include="include\LithpPrimitive.h" />
+    <ClInclude Include="include\LithpString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
