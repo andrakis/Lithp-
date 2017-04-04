@@ -1,10 +1,3 @@
-/* 
- * File:   main.cpp
- * Author: thatcherj
- *
- * Created on 4 April 2017, 12:11 PM
- */
-
 #include <iostream>
 #include <map>
 

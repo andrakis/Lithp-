@@ -1,10 +1,3 @@
-/* 
- * File:   LithpAtom.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 4:02 PM
- */
-
 #ifndef LITHPATOM_H
 #define	LITHPATOM_H
 

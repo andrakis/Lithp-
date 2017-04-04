@@ -1,10 +1,3 @@
-/* 
- * File:   LithpDict.cpp
- * Author: thatcherj
- * 
- * Created on 4 April 2017, 12:13 PM
- */
-
 #include <string>
 #include "LithpDict.h"
 

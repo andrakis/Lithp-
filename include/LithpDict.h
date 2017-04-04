@@ -1,10 +1,3 @@
-/* 
- * File:   LithpDict.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 12:13 PM
- */
-
 #ifndef LITHPDICT_H
 #define	LITHPDICT_H
 

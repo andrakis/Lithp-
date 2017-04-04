@@ -1,10 +1,3 @@
-/* 
- * File:   LithpPrimitive.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 12:15 PM
- */
-
 #ifndef LITHPPRIMITIVE_H
 #define	LITHPPRIMITIVE_H
 

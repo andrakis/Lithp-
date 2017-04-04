@@ -1,10 +1,3 @@
-/* 
- * File:   LithpList.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 3:47 PM
- */
-
 #ifndef LITHPLIST_H
 #define	LITHPLIST_H
 

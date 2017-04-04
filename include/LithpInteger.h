@@ -1,10 +1,3 @@
-/* 
- * File:   LithpInteger.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 12:26 PM
- */
-
 #ifndef LITHPINTEGER_H
 #define	LITHPINTEGER_H
 

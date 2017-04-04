@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT39M9.1933666S" SolutionTotalViewTime="PT35M52.100092S" SolutionTotalDebugTime="PT3M59.7357121S">
+  <FileVersion>
+    <Major>1</Major>
+    <Minor>0</Minor>
+  </FileVersion>
+  <SessionTimeList />
+  <LastSessionTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M21.6686711S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T23:46:23.6433525+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+  </LastSessionTimeList>
+  <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT3.4871994S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\.dep.inc</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:29:27.5936049+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M59.7357121S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-04-04T19:22:13.2467617+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT33.3589081S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\crt\src\vcruntime\exe_common.inl</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-04-04T19:24:24.7652841+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M3.8396513S" EditActiveTime="PT22.8213054S">
+      <ModifiedDate>2017-04-04T20:43:29.7126796+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpAtom.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:27.4951675+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M21.0170655S" EditActiveTime="PT1M52.3314251S">
+      <ModifiedDate>2017-04-04T20:43:29.5926727+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpAtom.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:30.5173403+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M36.4135145S" EditActiveTime="PT1.9721128S">
+      <ModifiedDate>2017-04-04T20:43:29.9766947+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpDict.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:20:56.1823539+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M24.4718317S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\src\LithpDict.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:54:09.3322637+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.7225561S" EditActiveTime="PT26.609522S">
+      <ModifiedDate>2017-04-04T20:43:29.1766489+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpDict.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:47:24.0481746+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.9380537S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpExceptions.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:43:07.1963917+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT15.2408718S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpExceptions.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:03:40.3590164+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M19.8794321S" EditActiveTime="PT11M38.2529374S">
+      <ModifiedDate>2017-04-04T20:17:52.3497475+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpInteger.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:27:58.3354996+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M14.0082331S" EditActiveTime="PT1M35.5074628S">
+      <ModifiedDate>2017-04-04T20:42:38.7357639+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpInteger.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:47:04.4330527+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2.8511631S" EditActiveTime="PT1.6730957S">
+      <ModifiedDate>2017-04-04T20:43:29.8336865+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpList.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:43:11.4276337+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13.270759S" EditActiveTime="PT4.0322307S">
+      <ModifiedDate>2017-04-04T20:40:35.6807255+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpList.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:46:58.0156856+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.5324031S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpPrimitive.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:12.4253055+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M53.6662282S" EditActiveTime="PT16M22.6972071S">
+      <ModifiedDate>2017-04-04T20:43:29.4496645+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpPrimitive.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:30:46.2101015+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT12.4157102S" EditActiveTime="PT26.2184997S">
+      <ModifiedDate>2017-04-04T20:43:29.0406411+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpString.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:05.1298882+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.5884912S" EditActiveTime="PT6.3943658S">
+      <ModifiedDate>2017-04-04T20:43:29.3166569+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpString.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:46:49.9672253+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10M36.0373789S" EditActiveTime="PT6M10.6832021S">
+      <ModifiedDate>2017-04-04T20:33:35.3656849+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:22:17.4170002+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT6M18.360641S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>2</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:58:44.2319871+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+  </TotalTimeList>
+  <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT1M21.6646709S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T23:46:23.6433525+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT4M56.6979701S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:58:44.2319871+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.3591921S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-04-04T20:54:44.531277+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M24.4728318S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\src\LithpDict.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>\\DESKTOP-EQQ2UGR\Projects\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:54:09.3322637+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2.8511631S" EditActiveTime="PT1.6730957S">
+      <ModifiedDate>2017-04-04T20:43:29.8336865+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpList.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:43:11.4276337+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT0.9380537S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpExceptions.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:43:07.1963917+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT15.2408718S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpExceptions.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T20:03:40.3590164+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT9.7225561S" EditActiveTime="PT26.609522S">
+      <ModifiedDate>2017-04-04T20:43:29.1766489+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpDict.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:47:24.0481746+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M14.0082331S" EditActiveTime="PT1M35.5074628S">
+      <ModifiedDate>2017-04-04T20:42:38.7357639+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpInteger.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:47:04.4330527+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT13.270759S" EditActiveTime="PT4.0322307S">
+      <ModifiedDate>2017-04-04T20:40:35.6807255+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpList.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:46:58.0156856+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT8.5884912S" EditActiveTime="PT6.3943658S">
+      <ModifiedDate>2017-04-04T20:43:29.3166569+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpString.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:46:49.9672253+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT5M53.6662282S" EditActiveTime="PT16M22.6972071S">
+      <ModifiedDate>2017-04-04T20:43:29.4496645+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpPrimitive.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:30:46.2101015+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3.4871994S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\.dep.inc</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:29:27.5936049+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT2M21.0170655S" EditActiveTime="PT1M52.3314251S">
+      <ModifiedDate>2017-04-04T20:43:29.5926727+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\include\LithpAtom.h</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:30.5173403+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M3.8396513S" EditActiveTime="PT22.8213054S">
+      <ModifiedDate>2017-04-04T20:43:29.7126796+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpAtom.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:27.4951675+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT24.5324031S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpPrimitive.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:12.4253055+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT12.4157102S" EditActiveTime="PT26.2184997S">
+      <ModifiedDate>2017-04-04T20:43:29.0406411+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpString.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:28:05.1298882+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M19.8794321S" EditActiveTime="PT11M38.2529374S">
+      <ModifiedDate>2017-04-04T20:17:52.3497475+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpInteger.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:27:58.3354996+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT33.3589081S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\crt\src\vcruntime\exe_common.inl</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-04-04T19:24:24.7652841+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT10M36.0373789S" EditActiveTime="PT6M10.6832021S">
+      <ModifiedDate>2017-04-04T20:33:35.3656849+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\main.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:22:17.4170002+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT3M56.37652S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>Debug Mode</Item>
+      <ItemType>DebugModeItem</ItemType>
+      <ProjectName />
+      <CreatedDate>2017-04-04T19:22:13.2467617+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+    <DevTrackerDataItem ViewActiveTime="PT1M36.4135145S" EditActiveTime="PT1.9721128S">
+      <ModifiedDate>2017-04-04T20:43:29.9766947+10:00</ModifiedDate>
+      <ModifiedBy>Daedalus</ModifiedBy>
+      <EditedCount>1</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>P:\lithp++\src\LithpDict.cpp</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>P:\Lithp++ VS\Lithp++.vcxproj</ProjectName>
+      <CreatedDate>2017-04-04T19:20:56.1823539+10:00</CreatedDate>
+      <ViewedBy>Daedalus</ViewedBy>
+    </DevTrackerDataItem>
+  </HistoryTimeList>
+</DevTrackerData>

@@ -1,10 +1,3 @@
-/* 
- * File:   LithpString.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 3:02 PM
- */
-
 #ifndef LITHPSTRING_H
 #define	LITHPSTRING_H
 

@@ -1,10 +1,3 @@
-/* 
- * File:   LithpCastException.h
- * Author: thatcherj
- *
- * Created on 4 April 2017, 2:56 PM
- */
-
 #ifndef LITHPCASTEXCEPTION_H
 #define	LITHPCASTEXCEPTION_H
 

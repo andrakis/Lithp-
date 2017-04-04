@@ -1,10 +1,3 @@
-/* 
- * File:   LithpList.cpp
- * Author: thatcherj
- * 
- * Created on 4 April 2017, 3:47 PM
- */
-
 #include <list>
 #include <string>
 #include <sstream>
