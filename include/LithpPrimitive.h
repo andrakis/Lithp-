@@ -4,6 +4,8 @@
 #include <string>
 
 typedef std::string String;
+typedef long long   Integer;
+typedef double      Float;
 
 enum LithpPrimitiveEnum {
 	NONE,
@@ -12,7 +14,8 @@ enum LithpPrimitiveEnum {
 	FLOAT,
 	LIST,
 	STRING,
-	DICT
+	DICT,
+	OBJECT
 };
 
 class LithpPrimitive {
