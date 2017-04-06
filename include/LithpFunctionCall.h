@@ -9,23 +9,29 @@ class LithpFunctionCall :
 {
 public:
 	LithpFunctionCall(const LithpFunctionCall &orig)
-		: name(orig.name), params(orig.params) {
+		//: name(orig.name), params(orig.params) {
+	{
+		this->name = orig.name;
+		this->params = orig.params;
 
 	}
-	LithpFunctionCall(LithpAtom name, ListOpChainType params)
-		: name(name), params(params) {
+	LithpFunctionCall(LithpAtom *name, ListOpChainType *params)
+		//: name(name), params(params) {
+	{
+		this->name = name;
+		this->params = params;
 
 	}
 	virtual ~LithpFunctionCall();
 	LithpAtom GetName() const {
-		return name;
+		return *name;
 	}
 	ListOpChainType GetParams() const {
-		return params;
+		return *params;
 	}
-	String ToString();
 protected:
-	LithpAtom name;
-	ListOpChainType params;
+	String toString();
+	LithpAtom *name;
+	ListOpChainType *params;
 };
 

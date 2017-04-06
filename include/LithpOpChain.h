@@ -9,6 +9,10 @@ class LithpOpChainType :
 public:
 	LithpOpChainType() { };
 	virtual ~LithpOpChainType() {};
+protected:
+	virtual String toString() {
+		return "stub::LithpOpChainType::toString()";
+	}
 };
 
 typedef LithpList ListOpChainType;

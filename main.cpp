@@ -54,10 +54,10 @@ void testCompare() {
 void testOpchain() {
 	LithpAtom *atomPrint = Atom("print");
 	std::cout << atomPrint->ToString() << std::endl;
-	LithpLiteral stringHelloWorld(LithpString("Hello World!"));
+	LithpLiteral stringHelloWorld(new LithpString("Hello World!"));
 	ListOpChainType params;
 	params.PushBack(&stringHelloWorld);
-	LithpFunctionCall fnPrint(*atomPrint, params);
+	LithpFunctionCall fnPrint(atomPrint, &params);
 	std::cout << "FunctionCall ToString: " << fnPrint.ToString() << std::endl;
 
 	bool fool = false;

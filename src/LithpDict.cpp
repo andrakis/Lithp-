@@ -10,7 +10,7 @@ LithpDict::LithpDict(const LithpDict& orig) : dict(orig.dict) {
 LithpDict::~LithpDict() {
 }
 
-String LithpDict::ToString() {
+String LithpDict::toString() {
 	String result = "{";
 	bool first = true;
 	for(std::map<String,LithpPrimitive*>::iterator it = dict.begin();

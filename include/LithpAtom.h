@@ -13,10 +13,10 @@ public:
 		: LithpInteger(id), name(name) {
 	}
 	LithpAtom(const LithpAtom &orig) : LithpInteger(orig.value), name(orig.name) {}
-	String ToString() {
+protected:
+	String toString() {
 		return "'" + this->name + "'";
 	}
-protected:
 	LithpPrimitiveEnum PrimitiveType() const {
 		return ATOM;
 	}

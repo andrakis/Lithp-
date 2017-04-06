@@ -27,16 +27,19 @@ public:
 	LithpPrimitiveEnum GetType() const {
 		return PrimitiveType();
 	}
-	virtual String ToString() {
-		return "stub::ToString()";
-	}
 	virtual LithpPrimitive *Cast(LithpPrimitiveEnum to);
 	bool operator==(const LithpPrimitive &other) const {
 		if (GetType() != other.GetType())
 			return false;
 		return operatorCompare(other);
 	}
+	String ToString() {
+		return toString();
+	}
 protected:
+	virtual String toString() {
+		return "stub::ToString()";
+	}
 	virtual LithpPrimitiveEnum PrimitiveType() const {
 		return NONE;
 	}

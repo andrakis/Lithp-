@@ -2,7 +2,7 @@
 
 
 
-LithpLiteral::LithpLiteral(LithpPrimitive value) : value(&value)
+LithpLiteral::LithpLiteral(LithpPrimitive *value) : value(value)
 {
 }
 

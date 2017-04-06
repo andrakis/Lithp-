@@ -35,8 +35,8 @@ public:
 		return value.begin();
 	}
 
-	String ToString ();
 protected:
+	String toString ();
 	std::list<LithpPrimitive*> value;
 	LithpPrimitiveEnum PrimitiveType() const {
 		return LIST;

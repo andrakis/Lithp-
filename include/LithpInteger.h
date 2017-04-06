@@ -12,12 +12,12 @@ public:
 	LithpInteger(const LithpInteger& orig) : value(orig.value) { }
 	virtual ~LithpInteger();
 	bool operatorCompare(const LithpPrimitive & other) const;
-	String ToString () {
+protected:
+	String toString () {
 		std::stringstream ss;
 		ss << value;
 		return ss.str();
 	}
-protected:
 	LithpPrimitiveEnum PrimitiveType() const {
 		return INTEGER;
 	}

@@ -29,8 +29,8 @@ public:
 	iterator GetIterator () {
 		return dict.begin();
 	}
-	String ToString();
 protected:
+	String toString();
 	LithpPrimitiveEnum PrimitiveType() const {
 		return DICT;
 	}

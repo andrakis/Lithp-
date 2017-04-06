@@ -12,10 +12,10 @@ public:
 	LithpString(const LithpString& orig);
 	virtual ~LithpString();
 	bool operatorCompare(const LithpPrimitive & other) const;
-	String ToString () {
+protected:
+	String toString () {
 		return "\"" + value + "\"";
 	}
-protected:
 	LithpPrimitiveEnum PrimitiveType() const {
 		return STRING;
 	}

@@ -6,7 +6,7 @@ class LithpLiteral :
 	public LithpOpChainType
 {
 public:
-	LithpLiteral(LithpPrimitive value);
+	LithpLiteral(LithpPrimitive *value);
 	LithpLiteral(const LithpLiteral &orig)
 		: value(value)
 	{
@@ -17,6 +17,9 @@ public:
 		return value;
 	}
 protected:
+	String toString() {
+		return value->ToString();
+	}
 	virtual LithpPrimitiveEnum PrimitiveType() const {
 		return value->GetType();
 	}
