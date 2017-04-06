@@ -14,16 +14,16 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
-CCC=g++
-CXX=g++
+CC=or1k-linux-musl-gcc
+CCC=or1k-linux-musl-g++
+CXX=or1k-linux-musl-g++
 FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin-Windows
+CND_PLATFORM=Or1k
 CND_DLIB_EXT=dll
-CND_CONF=Release
+CND_CONF=Or1k-Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -59,13 +59,13 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-s -static
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp ${OBJECTFILES} ${LDLIBSOPTIONS}
 

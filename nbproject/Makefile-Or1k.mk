@@ -14,16 +14,16 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
-CCC=g++
-CXX=g++
+CC=or1k-linux-musl-gcc
+CCC=or1k-linux-musl-g++
+CXX=or1k-linux-musl-g++
 FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin-Windows
+CND_PLATFORM=Or1k
 CND_DLIB_EXT=dll
-CND_CONF=Release
+CND_CONF=Or1k-Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -59,55 +59,55 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-static -s
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/src/LithpAtom.o: src/LithpAtom.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpAtom.o src/LithpAtom.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpAtom.o src/LithpAtom.cpp
 
 ${OBJECTDIR}/src/LithpDict.o: src/LithpDict.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpDict.o src/LithpDict.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpDict.o src/LithpDict.cpp
 
 ${OBJECTDIR}/src/LithpExceptions.o: src/LithpExceptions.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpExceptions.o src/LithpExceptions.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpExceptions.o src/LithpExceptions.cpp
 
 ${OBJECTDIR}/src/LithpInteger.o: src/LithpInteger.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpInteger.o src/LithpInteger.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpInteger.o src/LithpInteger.cpp
 
 ${OBJECTDIR}/src/LithpList.o: src/LithpList.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpList.o src/LithpList.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpList.o src/LithpList.cpp
 
 ${OBJECTDIR}/src/LithpPrimitive.o: src/LithpPrimitive.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpPrimitive.o src/LithpPrimitive.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpPrimitive.o src/LithpPrimitive.cpp
 
 ${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpString.o src/LithpString.cpp
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpString.o src/LithpString.cpp
 
 # Subprojects
 .build-subprojects:
@@ -115,7 +115,7 @@ ${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp
 
 # Subprojects
 .clean-subprojects:
