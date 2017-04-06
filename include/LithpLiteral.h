@@ -6,7 +6,12 @@ class LithpLiteral :
 	public LithpOpChainType
 {
 public:
-	LithpLiteral(LithpPrimitive &value);
+	LithpLiteral(LithpPrimitive value);
+	LithpLiteral(const LithpLiteral &orig)
+		: value(value)
+	{
+
+	}
 	~LithpLiteral();
 	LithpPrimitive *GetValue() const {
 		return value;

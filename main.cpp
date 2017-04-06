@@ -58,6 +58,7 @@ void testOpchain() {
 	ListOpChainType params;
 	params.PushBack(&stringHelloWorld);
 	LithpFunctionCall fnPrint(*atomPrint, params);
+	std::cout << "FunctionCall ToString: " << fnPrint.ToString() << std::endl;
 
 	bool fool = false;
 

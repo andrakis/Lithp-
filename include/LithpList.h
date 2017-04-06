@@ -28,11 +28,12 @@ public:
 		this->value.pop_back();
 		return p;
 	}
-	std::list<LithpPrimitive*>::iterator GetIterator() {
-		return value.begin();
-	}
 
 	typedef typename std::list<LithpPrimitive*>::iterator iterator;
+
+	iterator GetIterator() {
+		return value.begin();
+	}
 
 	String ToString ();
 protected:

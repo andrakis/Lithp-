@@ -16,6 +16,18 @@
     <Filter Include="Source Files\OpChainTypes">
       <UniqueIdentifier>{5405fab3-3588-4b43-9b8c-42e03e8b465c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GCC Configuration">
+      <UniqueIdentifier>{5d5a45f1-d96b-49b1-9f15-774063c89b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Git files">
+      <UniqueIdentifier>{1d7ea855-3c71-47f4-b980-8104c6eeed15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29">
+      <UniqueIdentifier>{5e9d0b8a-5bcb-4a86-821a-ee20657b47bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private">
+      <UniqueIdentifier>{365bf6ce-cfae-41a5-93dc-fa595ccd04c9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -56,6 +68,54 @@
     <None Include=".dep.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include=".gitattributes">
+      <Filter>Git files</Filter>
+    </None>
+    <None Include=".gitignore">
+      <Filter>Git files</Filter>
+    </None>
+    <None Include="Makefile">
+      <Filter>GCC Configuration</Filter>
+    </None>
+    <None Include="nbproject\Makefile-Debug.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-impl.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-Or1k.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-Or1k-Debug.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-Or1k-Release.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-Release.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Makefile-variables.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Package-Debug.bash">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Package-Or1k.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Package-Or1k-Debug.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\Package-Release.bash">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </None>
+    <None Include="nbproject\private\launcher.properties">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private</Filter>
+    </None>
+    <None Include="nbproject\private\Makefile-variables.mk">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LithpAtom.h">
@@ -88,5 +148,19 @@
     <ClInclude Include="include\LithpFunctionCall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="nbproject\configurations.xml">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </Xml>
+    <Xml Include="nbproject\project.xml">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29</Filter>
+    </Xml>
+    <Xml Include="nbproject\private\configurations.xml">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private</Filter>
+    </Xml>
+    <Xml Include="nbproject\private\private.xml">
+      <Filter>GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

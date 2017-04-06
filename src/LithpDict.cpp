@@ -4,7 +4,7 @@
 LithpDict::LithpDict() {
 }
 
-LithpDict::LithpDict(const LithpDict& orig) {
+LithpDict::LithpDict(const LithpDict& orig) : dict(orig.dict) {
 }
 
 LithpDict::~LithpDict() {

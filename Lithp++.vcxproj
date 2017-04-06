@@ -123,6 +123,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".dep.inc" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="Makefile" />
+    <None Include="nbproject\Makefile-Debug.mk" />
+    <None Include="nbproject\Makefile-impl.mk" />
+    <None Include="nbproject\Makefile-Or1k-Debug.mk" />
+    <None Include="nbproject\Makefile-Or1k-Release.mk" />
+    <None Include="nbproject\Makefile-Or1k.mk" />
+    <None Include="nbproject\Makefile-Release.mk" />
+    <None Include="nbproject\Makefile-variables.mk" />
+    <None Include="nbproject\Package-Debug.bash" />
+    <None Include="nbproject\Package-Or1k-Debug.mk" />
+    <None Include="nbproject\Package-Or1k.mk" />
+    <None Include="nbproject\Package-Release.bash" />
+    <None Include="nbproject\private\launcher.properties" />
+    <None Include="nbproject\private\Makefile-variables.mk" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LithpAtom.h" />
@@ -135,6 +151,12 @@
     <ClInclude Include="include\LithpString.h" />
     <ClInclude Include="include\LithpLiteral.h" />
     <ClInclude Include="include\LithpOpChain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="nbproject\configurations.xml" />
+    <Xml Include="nbproject\private\configurations.xml" />
+    <Xml Include="nbproject\private\private.xml" />
+    <Xml Include="nbproject\project.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

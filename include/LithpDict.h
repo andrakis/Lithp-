@@ -25,7 +25,8 @@ public:
 	bool Present (String key) {
 		return dict.find(key) != dict.end();
 	}
-	std::map<String,LithpPrimitive*>::iterator Iterator () {
+	typedef typename std::map<String, LithpPrimitive*>::iterator iterator;
+	iterator GetIterator () {
 		return dict.begin();
 	}
 	String ToString();

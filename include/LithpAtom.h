@@ -10,8 +10,7 @@ typedef String      AtomName;
 class LithpAtom: public LithpInteger {
 public:
 	LithpAtom(AtomId id, String name)
-		: LithpInteger(id) {
-		this->name = name;
+		: LithpInteger(id), name(name) {
 	}
 	LithpAtom(const LithpAtom &orig) : LithpInteger(orig.value), name(orig.name) {}
 	String ToString() {
