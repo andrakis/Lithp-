@@ -7,7 +7,7 @@
 LithpList::LithpList() {
 }
 
-LithpList::LithpList(const LithpList& orig) {
+LithpList::LithpList(const LithpList& orig) : value(orig.value) {
 }
 
 LithpList::~LithpList() {

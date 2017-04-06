@@ -5,9 +5,6 @@ LithpInteger::LithpInteger(long long value) {
 	this->value = value;
 }
 
-LithpInteger::LithpInteger(const LithpInteger& orig) {
-}
-
 LithpInteger::~LithpInteger() {
 }
 

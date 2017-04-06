@@ -109,6 +109,9 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\OpChainTypes\LithpFunctionCall.cpp" />
+    <ClCompile Include="src\OpChainTypes\LithpLiteral.cpp" />
+    <ClCompile Include="src\LithpOpChain.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\LithpAtom.cpp" />
     <ClCompile Include="src\LithpDict.cpp" />
@@ -125,10 +128,13 @@
     <ClInclude Include="include\LithpAtom.h" />
     <ClInclude Include="include\LithpDict.h" />
     <ClInclude Include="include\LithpExceptions.h" />
+    <ClInclude Include="include\LithpFunctionCall.h" />
     <ClInclude Include="include\LithpInteger.h" />
     <ClInclude Include="include\LithpList.h" />
     <ClInclude Include="include\LithpPrimitive.h" />
     <ClInclude Include="include\LithpString.h" />
+    <ClInclude Include="include\LithpLiteral.h" />
+    <ClInclude Include="include\LithpOpChain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

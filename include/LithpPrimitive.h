@@ -15,7 +15,8 @@ enum LithpPrimitiveEnum {
 	LIST,
 	STRING,
 	DICT,
-	OBJECT
+	OBJECT,
+	OPCHAIN
 };
 
 class LithpPrimitive {
@@ -26,7 +27,7 @@ public:
 	LithpPrimitiveEnum GetType() const {
 		return PrimitiveType();
 	}
-	virtual std::string ToString() {
+	virtual String ToString() {
 		return "stub::ToString()";
 	}
 	virtual LithpPrimitive *Cast(LithpPrimitiveEnum to);

@@ -4,7 +4,7 @@ LithpString::LithpString(String value) {
 	this->value = value;
 }
 
-LithpString::LithpString(const LithpString& orig) {
+LithpString::LithpString(const LithpString& orig) : value(orig.value) {
 }
 
 LithpString::~LithpString() {

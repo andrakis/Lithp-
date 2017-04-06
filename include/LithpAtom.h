@@ -13,10 +13,7 @@ public:
 		: LithpInteger(id) {
 		this->name = name;
 	}
-	LithpAtom(LithpAtom *a)
-		: LithpInteger(a->value) {
-		this->name = name;
-	}
+	LithpAtom(const LithpAtom &orig) : LithpInteger(orig.value), name(orig.name) {}
 	String ToString() {
 		return "'" + this->name + "'";
 	}

@@ -13,58 +13,79 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
+    <Filter Include="Source Files\OpChainTypes">
+      <UniqueIdentifier>{5405fab3-3588-4b43-9b8c-42e03e8b465c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\lithp++\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpAtom.cpp">
+    <ClCompile Include="src\LithpAtom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpDict.cpp">
+    <ClCompile Include="src\LithpDict.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpExceptions.cpp">
+    <ClCompile Include="src\LithpExceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpInteger.cpp">
+    <ClCompile Include="src\LithpInteger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpList.cpp">
+    <ClCompile Include="src\LithpList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpPrimitive.cpp">
+    <ClCompile Include="src\LithpPrimitive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lithp++\src\LithpString.cpp">
+    <ClCompile Include="src\LithpString.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LithpOpChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpChainTypes\LithpLiteral.cpp">
+      <Filter>Source Files\OpChainTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpChainTypes\LithpFunctionCall.cpp">
+      <Filter>Source Files\OpChainTypes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\lithp++\.dep.inc">
+    <None Include=".dep.inc">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\lithp++\include\LithpAtom.h">
+    <ClInclude Include="include\LithpAtom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpDict.h">
+    <ClInclude Include="include\LithpDict.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpExceptions.h">
+    <ClInclude Include="include\LithpExceptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpInteger.h">
+    <ClInclude Include="include\LithpInteger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpList.h">
+    <ClInclude Include="include\LithpList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpPrimitive.h">
+    <ClInclude Include="include\LithpPrimitive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lithp++\include\LithpString.h">
+    <ClInclude Include="include\LithpString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LithpLiteral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LithpOpChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LithpFunctionCall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

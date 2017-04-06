@@ -6,6 +6,9 @@
 #include "LithpExceptions.h"
 #include "LithpInteger.h"
 #include "LithpList.h"
+#include "LithpOpChain.h"
+#include "LithpLiteral.h"
+#include "LithpFunctionCall.h"
 #include "LithpPrimitive.h"
 #include "LithpString.h"
 
@@ -15,6 +18,7 @@ void testDict() {
 	l.PushFront(new LithpInteger(2));
 	l.PushFront(new LithpString("Dooot"));
 	l.PushBack(Atom("test-atom"));
+	l.PushBack(Atom("another-atom"));
 	d.Put("test", new LithpInteger(1));
 	d.Put("foo", new LithpString("bar"));
 	d.Put("list", &l);
@@ -32,9 +36,9 @@ void testCompare() {
 	if (!testA) std::cout << "TestA pass" << std::endl;
 	if (testB)  std::cout << "TestB pass" << std::endl;
 
-	LithpAtom atomTest = Atom("test");
-	LithpAtom atomTest2 = Atom("test");
-	bool testC = atomTest == atomTest2;
+	LithpAtom *atomTest = Atom("test");
+	LithpAtom *atomTest2 = Atom("test");
+	bool testC = *atomTest == *atomTest2;
 	if (testC) std::cout << "TestC pass" << std::endl;
 
 	LithpString string1("test");
@@ -47,12 +51,25 @@ void testCompare() {
 	if (testE)  std::cout << "TestE pass" << std::endl;
 }
 
+void testOpchain() {
+	LithpAtom *atomPrint = Atom("print");
+	std::cout << atomPrint->ToString() << std::endl;
+	LithpLiteral stringHelloWorld(LithpString("Hello World!"));
+	ListOpChainType params;
+	params.PushBack(&stringHelloWorld);
+	LithpFunctionCall fnPrint(*atomPrint, params);
+
+	bool fool = false;
+
+}
+
 /*
  * Lithp++ entry point
  */
 int main(int argc, char** argv) {
 	testDict();
 	testCompare();
+	testOpchain();
 
 	std::cout << "Tests finished. Hit enter to finish." << std::endl;
 	std::string s;

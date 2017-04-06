@@ -33,8 +33,8 @@ protected:
 	LithpPrimitiveEnum PrimitiveType() const {
 		return DICT;
 	}
-private:
 	std::map<String,LithpPrimitive*> dict;
+private:
 };
 
 #endif	/* LITHPDICT_H */

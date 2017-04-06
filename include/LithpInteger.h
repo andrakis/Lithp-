@@ -9,7 +9,7 @@
 class LithpInteger : public LithpPrimitive {
 public:
 	LithpInteger(long long value);
-	LithpInteger(const LithpInteger& orig);
+	LithpInteger(const LithpInteger& orig) : value(orig.value) { }
 	virtual ~LithpInteger();
 	bool operatorCompare(const LithpPrimitive & other) const;
 	String ToString () {
