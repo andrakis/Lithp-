@@ -16,8 +16,9 @@ DelegateTest::~DelegateTest()
 
 void DoDelegateTest() {
 	DelegateTest builtins;
-	LithpFunctionDelegate print;
-	print.bind(&DelegateTest::Print, builtins);
+	//LithpFunctionDelegate print;
+	//print.bind(&DelegateTest::Print, builtins);
+	auto print = dlgt::make_delegate(&DelegateTest::Print, builtins);
 	LithpList params;
 	params.PushBack(new LithpString("Hello, world!"));
 	LithpOpChain chain; // just for passing

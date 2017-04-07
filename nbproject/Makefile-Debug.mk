@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/src/DelegateTest/DelegateTest.o \
 	${OBJECTDIR}/src/LithpAtom.o \
 	${OBJECTDIR}/src/LithpDict.o \
 	${OBJECTDIR}/src/LithpExceptions.o \
@@ -75,57 +76,62 @@ ${CND_DISTDIR}/${CND_CONF}/lithp.exe: ${OBJECTFILES}
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/src/DelegateTest/DelegateTest.o: src/DelegateTest/DelegateTest.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/DelegateTest
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/DelegateTest/DelegateTest.o src/DelegateTest/DelegateTest.cpp
 
 ${OBJECTDIR}/src/LithpAtom.o: src/LithpAtom.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpAtom.o src/LithpAtom.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpAtom.o src/LithpAtom.cpp
 
 ${OBJECTDIR}/src/LithpDict.o: src/LithpDict.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpDict.o src/LithpDict.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpDict.o src/LithpDict.cpp
 
 ${OBJECTDIR}/src/LithpExceptions.o: src/LithpExceptions.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpExceptions.o src/LithpExceptions.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpExceptions.o src/LithpExceptions.cpp
 
 ${OBJECTDIR}/src/LithpInteger.o: src/LithpInteger.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpInteger.o src/LithpInteger.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpInteger.o src/LithpInteger.cpp
 
 ${OBJECTDIR}/src/LithpList.o: src/LithpList.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpList.o src/LithpList.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpList.o src/LithpList.cpp
 
 ${OBJECTDIR}/src/LithpOpChain.o: src/LithpOpChain.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpOpChain.o src/LithpOpChain.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpOpChain.o src/LithpOpChain.cpp
 
 ${OBJECTDIR}/src/LithpPrimitive.o: src/LithpPrimitive.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpPrimitive.o src/LithpPrimitive.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpPrimitive.o src/LithpPrimitive.cpp
 
 ${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpString.o src/LithpString.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpString.o src/LithpString.cpp
 
 ${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o: src/OpChainTypes/LithpFunctionCall.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/OpChainTypes
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o src/OpChainTypes/LithpFunctionCall.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o src/OpChainTypes/LithpFunctionCall.cpp
 
 ${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o: src/OpChainTypes/LithpLiteral.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/OpChainTypes
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o src/OpChainTypes/LithpLiteral.cpp
+	$(COMPILE.cc) -g -Iinclude/ -Idelegate1.10/include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o src/OpChainTypes/LithpLiteral.cpp
 
 # Subprojects
 .build-subprojects:

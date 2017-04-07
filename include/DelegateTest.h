@@ -1,12 +1,9 @@
 #pragma once
 #include <iostream>
-#include "delegate.h"
+#include "Delegate.h"
 #include "LithpAtom.h"
 #include "LithpList.h"
 #include "LithpLiteral.h"
-
-typedef fd::delegate<LithpPrimitive& (LithpList &params, LithpOpChain &state)>
-	LithpFunctionDelegate;
 
 class DelegateTest
 {

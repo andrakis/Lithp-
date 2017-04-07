@@ -1,0 +1,3 @@
+[submodule "contrib/delegates"]
+	path = contrib/delegates
+	url = https://github.com/marcmo/delegates

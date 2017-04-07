@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>include/DelegateTest.h</itemPath>
       <itemPath>include/LithpAtom.h</itemPath>
       <itemPath>include/LithpDict.h</itemPath>
       <itemPath>include/LithpExceptions.h</itemPath>
@@ -22,6 +23,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="DelegateTest"
+                     displayName="DelegateTest"
+                     projectFiles="true">
+        <itemPath>src/DelegateTest/DelegateTest.cpp</itemPath>
+      </logicalFolder>
       <logicalFolder name="OpChainTypes"
                      displayName="OpChainTypes"
                      projectFiles="true">
@@ -52,6 +58,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>src/OpChainTypes</Elem>
+    <Elem>src/DelegateTest</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -63,14 +70,18 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <standard>11</standard>
           <incDir>
             <pElem>include/</pElem>
+            <pElem>delegate1.10/include</pElem>
           </incDir>
         </ccTool>
         <linkerTool>
           <output>${CND_DISTDIR}/${CND_CONF}/lithp</output>
         </linkerTool>
       </compileType>
+      <item path="include/DelegateTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpDict.h" ex="false" tool="3" flavor2="0">
@@ -92,6 +103,8 @@
       <item path="include/LithpString.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DelegateTest/DelegateTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LithpAtom.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -130,7 +143,8 @@
         <ccTool>
           <developmentMode>5</developmentMode>
           <incDir>
-            <pElem>include</pElem>
+            <pElem>include/</pElem>
+            <pElem>delegate1.10/include</pElem>
           </incDir>
         </ccTool>
         <fortranCompilerTool>
@@ -145,6 +159,8 @@
           <commandLine>-static</commandLine>
         </linkerTool>
       </compileType>
+      <item path="include/DelegateTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpDict.h" ex="false" tool="3" flavor2="0">
@@ -166,6 +182,8 @@
       <item path="include/LithpString.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DelegateTest/DelegateTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LithpAtom.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -205,6 +223,7 @@
           <commandlineTool>or1k-linux-musl-g++</commandlineTool>
           <incDir>
             <pElem>include/</pElem>
+            <pElem>delegate1.10/include</pElem>
           </incDir>
         </ccTool>
         <asmTool>
@@ -217,6 +236,8 @@
           <commandLine>-static</commandLine>
         </linkerTool>
       </compileType>
+      <item path="include/DelegateTest.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpDict.h" ex="false" tool="3" flavor2="0">
@@ -238,6 +259,8 @@
       <item path="include/LithpString.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/DelegateTest/DelegateTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LithpAtom.cpp" ex="false" tool="1" flavor2="9">
       </item>
