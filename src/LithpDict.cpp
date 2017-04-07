@@ -13,14 +13,49 @@ LithpDict::~LithpDict() {
 String LithpDict::toString() {
 	String result = "{";
 	bool first = true;
-	for(std::map<String,LithpPrimitive*>::iterator it = dict.begin();
+	for(iterator it = dict.begin();
 		it != dict.end(); ++it) {
 			if(!first)
 				result += " ";
 			else
 				first = false;
-			result += it->first + ": " + it->second->ToString();
+			result += it->first + ": " +
+				this->toStringPrefix(it->second) +
+				it->second->ToString() +
+				this->toStringPostfix(it->second);
 	}
 	result += "}";
 	return result;
+}
+
+String LithpDict::toStringPrefix(LithpPrimitive *prim)
+{
+	switch (prim->GetType()) {
+	case STRING:
+		return "\"";
+	case LIST:
+		return "[";
+	case DICT:
+		return "{";
+	case ATOM:
+		return "'";
+	default:
+		return "";
+	}
+}
+
+String LithpDict::toStringPostfix(LithpPrimitive *prim)
+{
+	switch (prim->GetType()) {
+	case STRING:
+		return "\"";
+	case LIST:
+		return "]";
+	case DICT:
+		return "}";
+	case ATOM:
+		return "'";
+	default:
+		return "";
+	}
 }

@@ -12,6 +12,8 @@
 #include "LithpPrimitive.h"
 #include "LithpString.h"
 
+#include "DelegateTest.h"
+
 void testDict() {
 	LithpDict d;
 	LithpList l;
@@ -71,6 +73,7 @@ int main(int argc, char** argv) {
 	testDict();
 	testCompare();
 	testOpchain();
+	DoDelegateTest();
 
 	std::cout << "Tests finished. Hit enter to finish." << std::endl;
 	std::string s;

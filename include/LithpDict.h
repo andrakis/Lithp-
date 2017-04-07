@@ -31,6 +31,8 @@ public:
 	}
 protected:
 	String toString();
+	String toStringPrefix(LithpPrimitive *prim);
+	String toStringPostfix(LithpPrimitive * prim);
 	LithpPrimitiveEnum PrimitiveType() const {
 		return DICT;
 	}

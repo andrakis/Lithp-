@@ -28,6 +28,9 @@
     <Filter Include="GCC Configuration\nbproject %28Netbeans and Linux Makefiles%29\private">
       <UniqueIdentifier>{365bf6ce-cfae-41a5-93dc-fa595ccd04c9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DelegateTest">
+      <UniqueIdentifier>{7ee830a9-b1bb-4df5-b30f-fa42da4ee5ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +65,9 @@
     </ClCompile>
     <ClCompile Include="src\OpChainTypes\LithpFunctionCall.cpp">
       <Filter>Source Files\OpChainTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DelegateTest\DelegateTest.cpp">
+      <Filter>Source Files\DelegateTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -118,9 +124,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\LithpAtom.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\LithpDict.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -146,6 +149,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\LithpFunctionCall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LithpFunctionDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DelegateTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LithpAtom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

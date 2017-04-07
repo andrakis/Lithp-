@@ -24,7 +24,7 @@ public:
 	LithpOpChain();
 	virtual ~LithpOpChain();
 	ListOpChainType::iterator GetIterator() {
-		return ops.GetIterator();
+		return ops.begin();
 	}
 	void Push(LithpOpChainType *value) {
 		ops.PushBack(value);

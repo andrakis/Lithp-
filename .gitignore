@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/fd_delegate_110_src
+/fd_delegate_110_src.zip
+/fd_demo.zip

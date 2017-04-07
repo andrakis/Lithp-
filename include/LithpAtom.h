@@ -15,7 +15,7 @@ public:
 	LithpAtom(const LithpAtom &orig) : LithpInteger(orig.value), name(orig.name) {}
 protected:
 	String toString() {
-		return "'" + this->name + "'";
+		return this->name;
 	}
 	LithpPrimitiveEnum PrimitiveType() const {
 		return ATOM;

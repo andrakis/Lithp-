@@ -13,17 +13,49 @@ LithpList::LithpList(const LithpList& orig) : value(orig.value) {
 LithpList::~LithpList() {
 }
 
-String LithpList::toString () {
-	String result = "[";
+String LithpList::toString() {
+	String result = "";
 	bool first = true;
-	for(std::list<LithpPrimitive*>::iterator it = this->value.begin();
-		it != this->value.end(); ++it) {
+	for(iterator it = this->begin();
+		it != this->end(); ++it) {
 			if(!first)
 				result += " ";
 			else
 				first = false;
-			result += (*it)->ToString();
+			LithpPrimitive *p = *it;
+			result += this->toStringPrefix(p) + p->ToString() + this->toStringPostfix(p);
 	}
-	result += "]";
 	return result;
+}
+
+String LithpList::toStringPrefix(LithpPrimitive *prim)
+{
+	switch (prim->GetType()) {
+	case STRING:
+		return "\"";
+	case LIST:
+		return "[";
+	case DICT:
+		return "{";
+	case ATOM:
+		return "'";
+	default:
+		return "";
+	}
+}
+
+String LithpList::toStringPostfix(LithpPrimitive *prim)
+{
+	switch (prim->GetType()) {
+	case STRING:
+		return "\"";
+	case LIST:
+		return "]";
+	case DICT:
+		return "}";
+	case ATOM:
+		return "'";
+	default:
+		return "";
+	}
 }

@@ -14,7 +14,7 @@ public:
 	bool operatorCompare(const LithpPrimitive & other) const;
 protected:
 	String toString () {
-		return "\"" + value + "\"";
+		return value;
 	}
 	LithpPrimitiveEnum PrimitiveType() const {
 		return STRING;

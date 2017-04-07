@@ -31,12 +31,17 @@ public:
 
 	typedef typename std::list<LithpPrimitive*>::iterator iterator;
 
-	iterator GetIterator() {
+	iterator begin() {
 		return value.begin();
+	}
+	iterator end() {
+		return value.end();
 	}
 
 protected:
-	String toString ();
+	String toString () ;
+	String toStringPrefix(LithpPrimitive * prim);
+	String toStringPostfix(LithpPrimitive * prim);
 	std::list<LithpPrimitive*> value;
 	LithpPrimitiveEnum PrimitiveType() const {
 		return LIST;
