@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "Delegate.h"
+#include "delegate.h"
 #include "LithpAtom.h"
 #include "LithpList.h"
 #include "LithpLiteral.h"

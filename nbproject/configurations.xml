@@ -70,10 +70,11 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <stripSymbols>true</stripSymbols>
           <standard>11</standard>
           <incDir>
             <pElem>include/</pElem>
-            <pElem>delegate1.10/include</pElem>
+            <pElem>contrib/delegates/include</pElem>
           </incDir>
         </ccTool>
         <linkerTool>
@@ -142,9 +143,10 @@
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
+          <standard>11</standard>
           <incDir>
             <pElem>include/</pElem>
-            <pElem>delegate1.10/include</pElem>
+            <pElem>contrib/delegates/include</pElem>
           </incDir>
         </ccTool>
         <fortranCompilerTool>
@@ -220,10 +222,12 @@
           <commandlineTool>or1k-linux-musl-gcc</commandlineTool>
         </cTool>
         <ccTool>
+          <stripSymbols>true</stripSymbols>
+          <standard>11</standard>
           <commandlineTool>or1k-linux-musl-g++</commandlineTool>
           <incDir>
             <pElem>include/</pElem>
-            <pElem>delegate1.10/include</pElem>
+            <pElem>contrib/delegates/include</pElem>
           </incDir>
         </ccTool>
         <asmTool>
