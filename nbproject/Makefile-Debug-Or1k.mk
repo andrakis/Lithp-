@@ -18,12 +18,12 @@ CC=or1k-linux-musl-gcc
 CCC=or1k-linux-musl-g++
 CXX=or1k-linux-musl-g++
 FC=gfortran
-AS=as
+AS=or1k-linux-musl-as
 
 # Macros
-CND_PLATFORM=Or1k
+CND_PLATFORM=MinGW-Windows
 CND_DLIB_EXT=dll
-CND_CONF=Or1k-Debug
+CND_CONF=Debug-Or1k
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -41,8 +41,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/LithpExceptions.o \
 	${OBJECTDIR}/src/LithpInteger.o \
 	${OBJECTDIR}/src/LithpList.o \
+	${OBJECTDIR}/src/LithpOpChain.o \
 	${OBJECTDIR}/src/LithpPrimitive.o \
-	${OBJECTDIR}/src/LithpString.o
+	${OBJECTDIR}/src/LithpString.o \
+	${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o \
+	${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o
 
 
 # C Compiler Flags
@@ -59,55 +62,70 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-s -static
+LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/lithp.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp: ${OBJECTFILES}
-	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp ${OBJECTFILES} ${LDLIBSOPTIONS}
+${CND_DISTDIR}/${CND_CONF}/lithp.exe: ${OBJECTFILES}
+	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}
+	or1k-linux-musl-g++ -o ${CND_DISTDIR}/${CND_CONF}/lithp ${OBJECTFILES} ${LDLIBSOPTIONS} -static -s
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
-${OBJECTDIR}/src/LithpAtom.o: src/LithpAtom.cpp 
+${OBJECTDIR}/src/LithpAtom.o: src/LithpAtom.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpAtom.o src/LithpAtom.cpp
 
-${OBJECTDIR}/src/LithpDict.o: src/LithpDict.cpp 
+${OBJECTDIR}/src/LithpDict.o: src/LithpDict.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpDict.o src/LithpDict.cpp
 
-${OBJECTDIR}/src/LithpExceptions.o: src/LithpExceptions.cpp 
+${OBJECTDIR}/src/LithpExceptions.o: src/LithpExceptions.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpExceptions.o src/LithpExceptions.cpp
 
-${OBJECTDIR}/src/LithpInteger.o: src/LithpInteger.cpp 
+${OBJECTDIR}/src/LithpInteger.o: src/LithpInteger.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpInteger.o src/LithpInteger.cpp
 
-${OBJECTDIR}/src/LithpList.o: src/LithpList.cpp 
+${OBJECTDIR}/src/LithpList.o: src/LithpList.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpList.o src/LithpList.cpp
 
-${OBJECTDIR}/src/LithpPrimitive.o: src/LithpPrimitive.cpp 
+${OBJECTDIR}/src/LithpOpChain.o: src/LithpOpChain.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpOpChain.o src/LithpOpChain.cpp
+
+${OBJECTDIR}/src/LithpPrimitive.o: src/LithpPrimitive.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpPrimitive.o src/LithpPrimitive.cpp
 
-${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp 
+${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/LithpString.o src/LithpString.cpp
+
+${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o: src/OpChainTypes/LithpFunctionCall.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/OpChainTypes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpFunctionCall.o src/OpChainTypes/LithpFunctionCall.cpp
+
+${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o: src/OpChainTypes/LithpLiteral.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/OpChainTypes
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude/ -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/OpChainTypes/LithpLiteral.o src/OpChainTypes/LithpLiteral.cpp
 
 # Subprojects
 .build-subprojects:
@@ -115,7 +133,6 @@ ${OBJECTDIR}/src/LithpString.o: src/LithpString.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/lithp
 
 # Subprojects
 .clean-subprojects:

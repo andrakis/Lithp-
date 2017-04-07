@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="95">
+<configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -7,8 +7,11 @@
       <itemPath>include/LithpAtom.h</itemPath>
       <itemPath>include/LithpDict.h</itemPath>
       <itemPath>include/LithpExceptions.h</itemPath>
+      <itemPath>include/LithpFunctionCall.h</itemPath>
       <itemPath>include/LithpInteger.h</itemPath>
       <itemPath>include/LithpList.h</itemPath>
+      <itemPath>include/LithpLiteral.h</itemPath>
+      <itemPath>include/LithpOpChain.h</itemPath>
       <itemPath>include/LithpPrimitive.h</itemPath>
       <itemPath>include/LithpString.h</itemPath>
     </logicalFolder>
@@ -19,11 +22,18 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="OpChainTypes"
+                     displayName="OpChainTypes"
+                     projectFiles="true">
+        <itemPath>src/OpChainTypes/LithpFunctionCall.cpp</itemPath>
+        <itemPath>src/OpChainTypes/LithpLiteral.cpp</itemPath>
+      </logicalFolder>
       <itemPath>src/LithpAtom.cpp</itemPath>
       <itemPath>src/LithpDict.cpp</itemPath>
       <itemPath>src/LithpExceptions.cpp</itemPath>
       <itemPath>src/LithpInteger.cpp</itemPath>
       <itemPath>src/LithpList.cpp</itemPath>
+      <itemPath>src/LithpOpChain.cpp</itemPath>
       <itemPath>src/LithpPrimitive.cpp</itemPath>
       <itemPath>src/LithpString.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -40,6 +50,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>src/OpChainTypes</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -54,6 +67,9 @@
             <pElem>include/</pElem>
           </incDir>
         </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/lithp</output>
+        </linkerTool>
       </compileType>
       <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -61,9 +77,15 @@
       </item>
       <item path="include/LithpExceptions.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/LithpFunctionCall.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/LithpInteger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpLiteral.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpOpChain.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpPrimitive.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -81,14 +103,23 @@
       </item>
       <item path="src/LithpList.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/LithpOpChain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/LithpPrimitive.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LithpString.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/OpChainTypes/LithpFunctionCall.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/OpChainTypes/LithpLiteral.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
-        <compilerSet>default</compilerSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
         <dependencyChecking>true</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
@@ -108,6 +139,11 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/lithp</output>
+          <stripSymbols>true</stripSymbols>
+          <commandLine>-static</commandLine>
+        </linkerTool>
       </compileType>
       <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -115,9 +151,15 @@
       </item>
       <item path="include/LithpExceptions.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/LithpFunctionCall.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/LithpInteger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpLiteral.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpOpChain.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/LithpPrimitive.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -135,9 +177,90 @@
       </item>
       <item path="src/LithpList.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/LithpOpChain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/LithpPrimitive.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LithpString.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OpChainTypes/LithpFunctionCall.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/OpChainTypes/LithpLiteral.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug-Or1k" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>or1k-linux-musl-gcc</commandlineTool>
+        </cTool>
+        <ccTool>
+          <commandlineTool>or1k-linux-musl-g++</commandlineTool>
+          <incDir>
+            <pElem>include/</pElem>
+          </incDir>
+        </ccTool>
+        <asmTool>
+          <commandlineTool>or1k-linux-musl-as</commandlineTool>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/lithp</output>
+          <stripSymbols>true</stripSymbols>
+          <commandlineTool>or1k-linux-musl-g++</commandlineTool>
+          <commandLine>-static</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="include/LithpAtom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpDict.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpExceptions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpFunctionCall.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpInteger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpList.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpLiteral.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpOpChain.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpPrimitive.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/LithpString.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpAtom.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpDict.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpExceptions.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpInteger.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpList.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpOpChain.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpPrimitive.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/LithpString.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="src/OpChainTypes/LithpFunctionCall.cpp"
+            ex="false"
+            tool="1"
+            flavor2="9">
+      </item>
+      <item path="src/OpChainTypes/LithpLiteral.cpp" ex="false" tool="1" flavor2="9">
       </item>
     </conf>
   </confs>
